@@ -64,13 +64,13 @@ public class LocalLibraryApplication implements CommandLineRunner {
 		
 		ar.saveAll(authors);
 		
-		Book book1 = new Book("book1", date, date);
-		Book book2 = new Book("book2", date, date);
-		Book book3 = new Book("book3", date, date);
-		Book book4 = new Book("book4", date, date);
-		Book book5 = new Book("book5", date, date);
-		Book book6 = new Book("book6", date, date);
-		Book book7 = new Book("book7", date, date);
+		Book book1 = new Book("Book 1", date, date);
+		Book book2 = new Book("Book 2", date, date);
+		Book book3 = new Book("Book 3", date, date);
+		Book book4 = new Book("Book 4", date, date);
+		Book book5 = new Book("Book 5", date, date);
+		Book book6 = new Book("Book 6", date, date);
+		Book book7 = new Book("Book 7", date, date);
 		
 		List<Book> books = new ArrayList<Book>();
 		books.add(book1);
@@ -162,15 +162,11 @@ public class LocalLibraryApplication implements CommandLineRunner {
 		Country country1 = new Country("SG", date, date);
 		Country country2 = new Country("MY", date, date);
 		Country country3 = new Country("US", date, date);
-		Country country4 = new Country("UK", date, date);
-		Country country5 = new Country("TH", date, date);
 		
 		List<Country> countries = new ArrayList<Country>();
 		countries.add(country1);
 		countries.add(country2);
 		countries.add(country3);
-		countries.add(country4);
-		countries.add(country5);
 		
 		cr.saveAll(countries);
 		
@@ -179,26 +175,25 @@ public class LocalLibraryApplication implements CommandLineRunner {
 		Person person3 = new Person("Natalie", date, date, country1);
 		Person person4 = new Person("William", date, date, country1);
 		Person person5 = new Person("Madison", date, date, country1);
-		Person person6 = new Person("Sophia", date, date, country2);
-		Person person7 = new Person("Andrew", date, date, country2);
-		Person person8 = new Person("Olivia", date, date, country2);
+		Person person6 = new Person("Sophia", date, date, country1);
+		Person person7 = new Person("Andrew", date, date, country1);
+		Person person8 = new Person("Olivia", date, date, country1);
 		Person person9 = new Person("Daniel", date, date, country2);
 		Person person10 = new Person("Isabella", date, date, country2);
-		Person person11 = new Person("Joshua", date, date, country3);
-		Person person12 = new Person("Mia", date, date, country3);
-		Person person13 = new Person("Taylor", date, date, country3);
-		Person person14 = new Person("Michael", date, date, country3);
-		Person person15 = new Person("Chloe", date, date, country3);
-		Person person16 = new Person("Victoria", date, date, country4);
-		Person person17 = new Person("Christopher", date, date, country4);
-		Person person18 = new Person("David", date, date, country4);
-		Person person19 = new Person("Benjamin", date, date, country4);
-		Person person20 = new Person("Lily", date, date, country4);
-		Person person21 = new Person("Ryan", date, date, country5);
-		Person person22 = new Person("Grace", date, date, country5);
-		Person person23 = new Person("Elizabeth", date, date, country5);
-		Person person24 = new Person("Matthew", date, date, country5);
-		Person person25 = new Person("Samuel", date, date, country5);
+		Person person11 = new Person("Joshua", date, date, country2);
+		Person person12 = new Person("Mia", date, date, country2);
+		Person person13 = new Person("Taylor", date, date, country2);
+		Person person14 = new Person("Michael", date, date, country2);
+		Person person15 = new Person("Chloe", date, date, country2);
+		Person person16 = new Person("Victoria", date, date, country2);
+		Person person17 = new Person("Christopher", date, date, country3);
+		Person person18 = new Person("David", date, date, country3);
+		Person person19 = new Person("Benjamin", date, date, country3);
+		Person person20 = new Person("Lily", date, date, country3);
+		Person person21 = new Person("Ryan", date, date, country3);
+		Person person22 = new Person("Grace", date, date, country3);
+		Person person23 = new Person("Elizabeth", date, date, country3);
+		Person person24 = new Person("Matthew", date, date, country3);
 		
 		List<Person> people = new ArrayList<Person>();
 		people.add(person1);
@@ -225,7 +220,6 @@ public class LocalLibraryApplication implements CommandLineRunner {
 		people.add(person22);
 		people.add(person23);
 		people.add(person24);
-		people.add(person25);
 		
 		pr.saveAll(people);
 		
@@ -266,7 +260,7 @@ public class LocalLibraryApplication implements CommandLineRunner {
 		bookRent6.setUpdatedAt(date);
 		
 		BookRent bookRent7 = new BookRent();
-		bookRent7.setBook(book3);
+		bookRent7.setBook(book4);
 		bookRent7.setPerson(person7);
 		bookRent7.setCreatedAt(date);
 		bookRent7.setUpdatedAt(date);
@@ -284,19 +278,19 @@ public class LocalLibraryApplication implements CommandLineRunner {
 		bookRent9.setUpdatedAt(date);
 		
 		BookRent bookRent10 = new BookRent();
-		bookRent10.setBook(book7);
+		bookRent10.setBook(book5);
 		bookRent10.setPerson(person10);
 		bookRent10.setCreatedAt(date);
 		bookRent10.setUpdatedAt(date);
 		
 		BookRent bookRent11 = new BookRent();
-		bookRent11.setBook(book7);
+		bookRent11.setBook(book6);
 		bookRent11.setPerson(person11);
 		bookRent11.setCreatedAt(date);
 		bookRent11.setUpdatedAt(date);
 		
 		BookRent bookRent12 = new BookRent();
-		bookRent12.setBook(book7);
+		bookRent12.setBook(book6);
 		bookRent12.setPerson(person12);
 		bookRent12.setCreatedAt(date);
 		bookRent12.setUpdatedAt(date);
@@ -308,104 +302,104 @@ public class LocalLibraryApplication implements CommandLineRunner {
 		bookRent13.setUpdatedAt(date);
 		
 		BookRent bookRent14 = new BookRent();
-		bookRent14.setBook(book6);
+		bookRent14.setBook(book7);
 		bookRent14.setPerson(person14);
 		bookRent14.setCreatedAt(date);
 		bookRent14.setUpdatedAt(date);
 		
 		BookRent bookRent15 = new BookRent();
-		bookRent15.setBook(book4);
+		bookRent15.setBook(book7);
 		bookRent15.setPerson(person15);
 		bookRent15.setCreatedAt(date);
 		bookRent15.setUpdatedAt(date);
 		
 		BookRent bookRent16 = new BookRent();
-		bookRent16.setBook(book1);
+		bookRent16.setBook(book6);
 		bookRent16.setPerson(person16);
 		bookRent16.setCreatedAt(date);
 		bookRent16.setUpdatedAt(date);
 		
 		BookRent bookRent17 = new BookRent();
-		bookRent17.setBook(book2);
+		bookRent17.setBook(book5);
 		bookRent17.setPerson(person17);
 		bookRent17.setCreatedAt(date);
 		bookRent17.setUpdatedAt(date);
 		
 		BookRent bookRent18 = new BookRent();
-		bookRent18.setBook(book3);
+		bookRent18.setBook(book4);
 		bookRent18.setPerson(person18);
 		bookRent18.setCreatedAt(date);
 		bookRent18.setUpdatedAt(date);
 		
 		BookRent bookRent19 = new BookRent();
-		bookRent19.setBook(book5);
+		bookRent19.setBook(book3);
 		bookRent19.setPerson(person19);
 		bookRent19.setCreatedAt(date);
 		bookRent19.setUpdatedAt(date);
 		
 		BookRent bookRent20 = new BookRent();
-		bookRent20.setBook(book7);
+		bookRent20.setBook(book2);
 		bookRent20.setPerson(person20);
 		bookRent20.setCreatedAt(date);
 		bookRent20.setUpdatedAt(date);
 		
 		BookRent bookRent21 = new BookRent();
-		bookRent21.setBook(book6);
+		bookRent21.setBook(book1);
 		bookRent21.setPerson(person21);
 		bookRent21.setCreatedAt(date);
 		bookRent21.setUpdatedAt(date);
 		
 		BookRent bookRent22 = new BookRent();
-		bookRent22.setBook(book6);
+		bookRent22.setBook(book1);
 		bookRent22.setPerson(person22);
 		bookRent22.setCreatedAt(date);
 		bookRent22.setUpdatedAt(date);
 		
 		BookRent bookRent23 = new BookRent();
-		bookRent23.setBook(book4);
+		bookRent23.setBook(book3);
 		bookRent23.setPerson(person23);
 		bookRent23.setCreatedAt(date);
 		bookRent23.setUpdatedAt(date);
 		
 		BookRent bookRent24 = new BookRent();
-		bookRent24.setBook(book3);
+		bookRent24.setBook(book5);
 		bookRent24.setPerson(person24);
 		bookRent24.setCreatedAt(date);
 		bookRent24.setUpdatedAt(date);
 		
 		BookRent bookRent25 = new BookRent();
-		bookRent25.setBook(book2);
-		bookRent25.setPerson(person25);
+		bookRent25.setBook(book7);
+		bookRent25.setPerson(person24);
 		bookRent25.setCreatedAt(date);
 		bookRent25.setUpdatedAt(date);
 		
 		BookRent bookRent26 = new BookRent();
 		bookRent26.setBook(book2);
-		bookRent26.setPerson(person3);
+		bookRent26.setPerson(person9);
 		bookRent26.setCreatedAt(date);
 		bookRent26.setUpdatedAt(date);
 		
 		BookRent bookRent27 = new BookRent();
 		bookRent27.setBook(book4);
-		bookRent27.setPerson(person7);
+		bookRent27.setPerson(person11);
 		bookRent27.setCreatedAt(date);
 		bookRent27.setUpdatedAt(date);
 		
 		BookRent bookRent28 = new BookRent();
-		bookRent28.setBook(book4);
+		bookRent28.setBook(book6);
 		bookRent28.setPerson(person15);
 		bookRent28.setCreatedAt(date);
 		bookRent28.setUpdatedAt(date);
 		
 		BookRent bookRent29 = new BookRent();
-		bookRent29.setBook(book4);
+		bookRent29.setBook(book1);
 		bookRent29.setPerson(person20);
 		bookRent29.setCreatedAt(date);
 		bookRent29.setUpdatedAt(date);
 		
 		BookRent bookRent30 = new BookRent();
-		bookRent30.setBook(book2);
-		bookRent30.setPerson(person25);
+		bookRent30.setBook(book3);
+		bookRent30.setPerson(person16);
 		bookRent30.setCreatedAt(date);
 		bookRent30.setUpdatedAt(date);
 		
